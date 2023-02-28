@@ -1,0 +1,66 @@
+<!DOCTYPE html >
+ <html>
+    <head>
+
+     <meta charset="utf-8" >
+
+     <title>MyONE Feedback</title>
+  
+     <style type="text/css">
+         ol, ul { 
+             list-style-type: none;
+            }
+     </style>
+
+    </head>
+
+    <body>
+     <form action="http://www.myone.fi" method="POST">
+         <h1>MyONE Feedback</h1>
+
+         <fieldset>
+             <legend><b>Anna palautetta voittaaksesi ilmaisen kokeilujakson</b></legend>
+             <ul>
+                 <li>Nimi: <input type="text" name="customername"></li>
+                 <li>Osoite <input type="text" name="address"></li>
+                 <li>Puhelinnumero: <input type="text" name="phonenumber"></li>
+                 <li>Sähköposti: <input type="text" name="email"></li>
+                 <li>Toimitusohjeet<br>
+                 <textarea name="instructions" rows="4" cols="60"
+                 maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
+                 <li><input type="date" name="name" value="2022-01-01"></li>
+             </ul>
+         </fieldset>
+
+         <fieldset>
+             <legend><p><b>Vastaa kysymyksiin toimintamme parantamiseksi!</b></p></legend>
+             <p>Mitä mieltä olet meistä? <em>(Valitse yksi)</em>:</p>
+             <ul>
+                 <li><input type="radio" name="vote" value="bestof">Parhaista parhain</li>
+                 <li><input type="radio" name="vote" value="best">Paras</li>
+                 <li><input type="radio" name="vote" value="normal">Neutraali</li>
+                 <li><input type="radio" name="vote" value="bad">Huono</li>
+                 <li><input type="radio" name="vote" value="vbad">Erittäin huono</li>
+             </ul>
+
+             <p>Miksi pidit meistä? <em>(Valitse niin monta kuin haluat.)</em>:</p>
+             <ul>
+                 <li><input type="checkbox" name="why" value="drink">Sovelluksen takia</li>
+                 <li><input type="checkbox" name="why" value="food">Nettisivujen takia</li>
+                 <li><input type="checkbox" name="why" value="atmosphere">Tunnelman takia</li>
+                 <li><input type="checkbox" name="why" value="service">Palvelun takia</li>
+                 <li><input type="checkbox" name="why" value="mushrooms">Sijannin takia</li>
+             </ul>
+
+             <p>Kuinka todenmukaisia vastauksesi olivat? (0-100%)</p>
+             <input type="number" name="correct" min="1" max="100">
+
+             <p>Kuinka paljon valehtelit vastauksissasi? (0-100%)</p>
+             <input type="range" name="satisfaction" min="0" max="100" step="0">
+         </fieldset>
+
+         <p><input type="submit" value="Kiitos">
+         <input type="reset" value="Tyhjennä"></p>
+     </form>
+  </body>
+</html>

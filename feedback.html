@@ -1,0 +1,66 @@
+<!DOCTYPE html >
+ <html>
+    <head>
+
+     <meta charset="utf-8" >
+
+     <title>MyONE Feedback</title>
+  
+     <style type="text/css">
+         ol, ul { 
+             list-style-type: none;
+            }
+     </style>
+
+    </head>
+
+    <body>
+     <form action="http://www.myone.fi" method="POST">
+         <h1>MyONE Feedback</h1>
+
+         <fieldset>
+             <legend><b>Give your information to win free software</b></legend>
+             <ul>
+                 <li>Name: <input type="text" name="customername"></li>
+                 <li>Address: <input type="text" name="address"></li>
+                 <li>Telephone Number: <input type="text" name="phonenumber"></li>
+                 <li>Email: <input type="text" name="email"></li>
+                 <li>Delivery instructions:<br>
+                 <textarea name="instructions" rows="4" cols="60"
+                 maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
+                 <li><input type="date" name="name" value="2022-01-01"></li>
+             </ul>
+         </fieldset>
+
+         <fieldset>
+             <legend><p><b>Please answer to all questions so we could get better!</b></p></legend>
+             <p>Did you like us? <em>(Choose one)</em>:</p>
+             <ul>
+                 <li><input type="radio" name="vote" value="bestof">Best of the best</li>
+                 <li><input type="radio" name="vote" value="best">Best</li>
+                 <li><input type="radio" name="vote" value="normal">Normal</li>
+                 <li><input type="radio" name="vote" value="bad">Bad</li>
+                 <li><input type="radio" name="vote" value="vbad">Very bad</li>
+             </ul>
+
+             <p>Why did you like us? <em>(Choose as many as you want)</em>:</p>
+             <ul>
+                 <li><input type="checkbox" name="why" value="drink">Cause of software</li>
+                 <li><input type="checkbox" name="why" value="food">Cause of site</li>
+                 <li><input type="checkbox" name="why" value="atmosphere">Cause of atmosphere</li>
+                 <li><input type="checkbox" name="why" value="service">Cause of service</li>
+                 <li><input type="checkbox" name="why" value="mushrooms">Cause of location</li>
+             </ul>
+
+             <p>How correct was your answers? (0-100%)</p>
+             <input type="number" name="correct" min="1" max="100">
+
+             <p>How much did you lie in your answers? (0-100%)</p>
+             <input type="range" name="satisfaction" min="0" max="100" step="0">
+         </fieldset>
+
+         <p><input type="submit" value="Thanks">
+         <input type="reset" value="Reset"></p>
+     </form>
+  </body>
+</html>
